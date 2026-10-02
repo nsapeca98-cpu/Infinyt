@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: infinity-virtual
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ADMIN_PATH
+        sync: false
